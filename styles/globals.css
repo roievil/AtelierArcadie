@@ -7,10 +7,10 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 
-.customBackGround-img {
-  background-image: url("../public/arcadieBackGround.png");
-}
-
-.customLogo-img {
-  background-image: url("../public/arcadieTitreBarreNavigation.png");
+/* default text color */
+body {
+  color: white;
+  background-image: url("../public/images/arcadieBackGround.png");
+  background-repeat: repeat-y;
+  background-size: 100% auto;
 }

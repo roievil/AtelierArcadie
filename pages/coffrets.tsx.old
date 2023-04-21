@@ -1,0 +1,105 @@
+// import React, { useState } from 'react';
+// import Image from 'next/image';
+// import data from '@/components/coffrets.json';
+// import ImageModal from '@/components/ImageModal';
+
+// interface IPicture {
+//   picturePath: string;
+//   pictureLegend: string;
+//   alt: string;
+//   width?: any;
+//   height?: any;
+// }
+
+// interface IPost {
+//   postTitle: string;
+//   pictures: IPicture[];
+// }
+
+// interface Data {
+//   pageTitle: string;
+//   posts: IPost[];
+// }
+
+// const coffrets = (): JSX.Element => {
+//   const { pageTitle, posts } = data as Data;
+//   const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
+//   const [modalImageSrc, setModalImageSrc] = useState<string>('');
+//   const [modalImageAlt, setModalImageAlt] = useState<string>('');
+//   const [modalImageHeight, setModalImageHeight] = useState<number>(-1);
+//   const [modalImageWidth, setModalImageWidth] = useState<number>(-1);
+
+//   const pictureWidth = 1620;
+
+//   const openModal = (
+//     imageSrc: string,
+//     imageAlt: string,
+//     imageHeight: number,
+//     imageWidth: number
+//   ): void => {
+//     setModalIsOpen(true);
+//     setModalImageSrc(imageSrc);
+//     setModalImageAlt(imageAlt);
+//     setModalImageHeight(imageHeight);
+//     setModalImageWidth(imageWidth);
+//   };
+
+//   const closeModal = (): void => {
+//     setModalIsOpen(false);
+//     setModalImageSrc('');
+//     setModalImageAlt('');
+//   };
+
+//   return (
+//     <div className="max-w-1620 mx-auto pt-24">
+//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+//         <h1 className="text-3xl font-bold leading-tight">{pageTitle}</h1>
+//         <div className="mt-8">
+//           {posts.map((post, index) => (
+//             <div key={index} className="mb-10">
+//               <h2 className="text-lg font-bold mb-2">{post.postTitle}</h2>
+//               <div className="grid md:grid-cols-2 gap-x-8">
+//                 {post.pictures.map((picture, subIndex) => (
+//                   <div key={subIndex} className="mb-6">
+//                     <div className="max-w-full">
+//                       <button
+//                         onClick={() => {
+//                           openModal(
+//                             picture.picturePath,
+//                             picture.alt,
+//                             picture.height,
+//                             picture.width
+//                           );
+//                         }}>
+//                         <Image
+//                           src={picture.picturePath}
+//                           alt={picture.alt}
+//                           width={pictureWidth}
+//                           height={picture.height}
+//                           className="rounded-lg"
+//                         />
+//                       </button>
+//                     </div>
+//                     <p className="text-sm font-medium mt-2">
+//                       {picture.pictureLegend}
+//                     </p>
+//                   </div>
+//                 ))}
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//       <ImageModal
+//         isOpen={modalIsOpen}
+//         onRequestClose={closeModal}
+//         imageSrc={modalImageSrc}
+//         imageAlt={modalImageAlt}
+//         imageHeight={modalImageHeight}
+//         imageWidth={modalImageWidth}
+//       />
+//     </div>
+//   );
+// };
+
+// export default coffrets;

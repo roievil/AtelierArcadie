@@ -1,0 +1,46 @@
+// import React from 'react';
+// import Modal from 'react-modal';
+// import Image from 'next/image';
+
+// Modal.setAppElement('#__next');
+
+// const ImageModal = ({
+//   isOpen,
+//   onRequestClose,
+//   imageSrc,
+//   imageAlt,
+//   imageHeight,
+//   imageWidth,
+// }: {
+//   isOpen: boolean;
+//   onRequestClose: any;
+//   imageSrc: string;
+//   imageAlt: string;
+//   imageHeight: number;
+//   imageWidth: number;
+// }): JSX.Element => {
+//   const customStyles = {
+//     overlay: {
+//       zIndex: 9999,
+//     },
+//   };
+
+//   return (
+//     <Modal isOpen={isOpen} onRequestClose={onRequestClose} style={customStyles}>
+//       <button
+//         onClick={onRequestClose}
+//         className="absolute top-0 right-0 m-4 text-xl text-gray-500 hover:text-red-500 focus:outline-none">
+//         &times;
+//       </button>
+//       <Image
+//         src={imageSrc}
+//         alt={imageAlt}
+//         width={imageWidth}
+//         height={imageHeight}
+//         className=" object-fit: cover"
+//       />
+//     </Modal>
+//   );
+// };
+
+// export default ImageModal;

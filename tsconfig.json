@@ -18,6 +18,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "globals.env", "components/ImageModal.tsx.old", "pages/coffrets.tsx.old"],
   "exclude": ["node_modules"]
 }

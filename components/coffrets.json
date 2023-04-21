@@ -1,0 +1,43 @@
+{
+    "pageTitle": "coffrets",
+    "posts": [
+        {
+            "postTitle": "Présentoir à gemmes",
+            "pictures": [
+                {
+                    "picturePath": "/images/coffrets/coffretGriffon1.jpg",
+                    "pictureLegend": "Conçu pour la bijouterie / joaillerie Griffon à Nantes.",
+                    "alt": "présentoirs noirs inscrustations d'argent",
+                    "width": "2560",
+                    "height": "2560"
+                },
+                {
+                    "picturePath": "/images/coffrets/coffretGriffon2.jpg",
+                    "pictureLegend": "5 plateaux empilables réalisés en valchromat noir",
+                    "alt": "présentoirs noirs inscrustations d'argent",
+                    "width": "2560",
+                    "height": "2560"
+                }
+            ]
+        },
+        {
+            "postTitle": "Boite à Bijoux Samson",
+            "pictures": [
+                {
+                    "picturePath": "/images/coffrets/samson1.jpg",
+                    "pictureLegend": "Réalisée en valchromat noir, l’abattant et les 5 tiroirs sont ornementés de fil d’argent massif.",
+                    "alt": "coffret noir inscrustations d'argent",
+                    "width": "1620",
+                    "height": "1080"
+                },
+                {
+                    "picturePath": "/images/coffrets/samson2.jpg",
+                    "pictureLegend": "Les portes latérales ont des rangements pour colliers, l’abattant est muni d’une glace sur l’envers. ",
+                    "alt": "coffret noir inscrustations d'argent",
+                    "width": "1620",
+                    "height": "1080"
+                }
+            ]
+        }
+    ]
+}
