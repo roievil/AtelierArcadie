@@ -1,0 +1,32 @@
+    [
+        {
+            "picturePath": "/images/accueil/slider/CoverTandCollectionStyxParArcadie.JPG",
+            "buttonPath": "/images/accueil/slider/CollectionStyxSiteLabelBigCenter.png",
+            "alt": "présentoirs noirs inscrustations d'argent",
+            "width": 1620,
+            "height": 1080,
+            "buttonTargetPath": "/styx",
+            "buttonWidth": 1163,
+            "buttonHeight": 355
+        },
+        {
+            "picturePath": "/images/accueil/slider/Moon4.JPG",
+            "buttonPath": "/images/accueil/slider/ParureMoonSiteLabelBigCenter.png",
+            "alt": "présentoirs noirs inscrustations d'argent",
+            "width": 1620,
+            "height": 1080,
+            "buttonTargetPath": "/styx",
+            "buttonWidth": 1163,
+            "buttonHeight": 355
+        },
+        {
+            "picturePath": "/images/accueil/slider/CoverDelosCollectionBetulaParArcadie.JPG",
+            "buttonPath": "/images/accueil/slider/PiecesUniquesSiteLabelBigCenter.png",
+            "alt": "présentoirs noirs inscrustations d'argent",
+            "width": 1620,
+            "height": 1080,
+            "buttonTargetPath": "/pieceUniques",
+            "buttonWidth": 1163,
+            "buttonHeight": 355
+        }
+    ]

@@ -6,8 +6,8 @@ interface IPicture {
   picturePath: string;
   pictureLegend: string;
   alt: string;
-  width?: any;
-  height?: any;
+  width: number;
+  height: number;
 }
 
 interface IPost {

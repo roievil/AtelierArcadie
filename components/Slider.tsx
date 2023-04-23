@@ -1,9 +1,23 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
-import { SliderData } from './SliderData';
-import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
+import SliderData from '@/components/SliderData.json';
+import { SlArrowLeft, SlArrowRight } from 'react-icons/Sl';
+import Link from 'next/link';
 
-const Slider = ({ slides }: any): JSX.Element => {
+const slides: Slide[] = SliderData as Slide[];
+
+interface Slide {
+  picturePath: string;
+  alt: string;
+  width: number;
+  height: number;
+  buttonPath: string;
+  buttonTargetPath: string;
+  buttonWidth: number;
+  buttonHeight: number;
+}
+
+const Slider = (): JSX.Element => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -19,35 +33,44 @@ const Slider = ({ slides }: any): JSX.Element => {
   }
 
   return (
-    <div id="gallery" className="max-w-[1240px] mx-auto">
-      <h1 className="text-2xl font-bold text-center p-4">Gallery</h1>
-      <div className="relative flex justify-center p-4">
+    <div id="gallery" className="w-screen mx-auto">
+      <div className="relative flex justify-center">
         {SliderData.map((slide, index) => {
+          const slideClass =
+            current === index ? 'slide-current' : 'slide-hidden';
+          const slidePosition =
+            current === index ? 0 : (current - index) * -100;
+
           return (
             <div
               key={index}
-              className={
-                index === current
-                  ? 'opacity-[1] ease-in duration-1000'
-                  : 'opacity-0'
-              }>
-              <FaArrowCircleLeft
+              className={`absolute top-0 left-0 h-full w-full transition-transform duration-1000 ${slideClass}`}
+              style={{ transform: `translateX(${slidePosition}%)` }}>
+              <SlArrowLeft
                 onClick={prevSlide}
-                className="absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2]"
+                className="absolute top-1/2 left-[30px] transform -translate-y-1/2 text-white/70 cursor-pointer select-none z-[2]"
                 size={50}
+                style={{ top: '50%' }}
               />
-              {index === current && (
+              <div className="relative">
                 <Image
-                  src={slide.image}
-                  alt="/"
-                  width="1440"
-                  height="600"
-                  objectFit="cover"
+                  src={slide.picturePath}
+                  alt={slide.alt}
+                  width={slide.width}
+                  height={slide.height}
                 />
-              )}
-              <FaArrowCircleRight
+                <Link href={slide.buttonTargetPath}>
+                  <Image
+                    src={slide.buttonPath}
+                    alt={'/'}
+                    width={slide.buttonWidth}
+                    height={slide.buttonHeight}
+                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-grey-500 hover:bg-grey-600 text-white py-4 px-8 uppercase font-bold text-sm transition-colors duration-300"></Image>
+                </Link>
+              </div>
+              <SlArrowRight
                 onClick={nextSlide}
-                className="absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2]"
+                className="absolute top-1/2 right-[30px] transform -translate-y-1/2 text-white/70 cursor-pointer select-none z-[2]"
                 size={50}
               />
             </div>
