@@ -1,54 +1,73 @@
 import React from 'react';
 // import Contact from '@/components/ContactComponent'
 // import Hero from '@/components/Hero'
-import lacDuGrandMaclu from '../public/images/arcadie/lacDuGrandMaclu.jpg';
+import valchromat from '../public/images/materiaux/ValchromatCollectionStyxParArcadie.jpg';
+import laiton from '../public/images/materiaux/BobineDeFilDeLaitonCollectionStyxParArcadie.jpg';
+import altuglas from '../public/images/materiaux/60LetheCollectionStyxParArcadie.jpg';
+import leds from '../public/images/materiaux/00ErebeCollectionStyxParArcadie.jpg';
 import Link from 'next/link';
 import Image from 'next/image';
 
 const arcadie = (): JSX.Element => {
   return (
-    <div className="flex flex-col items-center bg-fixed bg-center bg-cover">
-      <div className="flex justify-center w-full">
-        <Image
-          className="object-cover"
-          src={lacDuGrandMaclu}
-          alt="lacDuGranMaclu"
-          width={1920}
-          height={1080}
-        />
-      </div>
+    <div className="flex flex-col items-center bg-fixed bg-center bg-cover pt-24">
       <div className="max-w-[1000px] px-4 py-8">
-        <p className="text-lg mb-4 indent-8 md:text-xl font-medium">
-          L’Arcadie est une région sauvage et montagneuse de la Grèce et c’est
-          aussi un idéal pour les poètes depuis l’antiquité.
+        <h1 className="text-3xl font-bold py-8">Fabrication et matériaux</h1>
+        <h2 className="text-2xl font-bold py-8">Made in Nantes</h2>
+        <p className="text-lg mb-4 indent-8 md:text-xl font-medium pb-4">
+          Tous les items de la collection Styx sont dessinés et réalisés en
+          circuit court, dans mon atelier de Nantes. La fabrication est
+          artisanale dans ce qu’elle a de plus noble, chaque pièce passe entre
+          mes mains et est estampillée, ce qui me permet de garantir la grande
+          qualité de l’objet fini et me donne une large flexibilité pour
+          l’adapter à votre souhait. Tous mes modèles sont donc disponibles 100%
+          sur mesure et personnalisables.
         </p>
-        <p className="text-lg mb-4 indent-8 md:text-xl font-medium">
-          Au cœur du Péloponnèse c’est un des berceaux de la Grèce Antique, de
-          vertes vallées où les bergers mènent une vie simple faite de lait et
-          de miel.
+        <Link href={valchromat.src} target="_blank" rel="noopener noreferrer">
+          <Image className="object-cover" src={valchromat} alt="valchromat" />
+        </Link>
+        <h2 className="text-2xl font-bold py-8">Valchromat</h2>
+        <p className="text-lg mb-4 indent-8 md:text-xl font-medium pb-4">
+          Le valchromat est un nouveau matériau constitué de fibres de bois
+          teintées dans la masse, la couleur est présente dans toute l’épaisseur
+          de la ‘feuille’. Le valchromat s’apparente donc au bois et en a la
+          légèreté, la chaleur et la résistance, il a par contre l’avantage
+          d’être moins sensible aux variations de température et d’hygrométrie
+          ainsi que d’être légèrement hydrofuge. Je lui applique une finition
+          qui avive sa couleur et son caractère organique et le protège des
+          aléas du quotidien de la maison.
         </p>
-        <p className="text-lg mb-4 indent-8 md:text-xl font-medium">
-          C’est pourquoi elle est devenue un lieu mythique pour les premières
-          civilisations citadines, un point de mire, un paradis perdu auquel
-          rêver au milieu de la frénésie urbaine.
+        <Link href={laiton.src} target="_blank" rel="noopener noreferrer">
+          <Image className="object-cover" src={laiton} alt="laiton" />
+        </Link>
+        <h2 className="text-2xl font-bold py-8">Laiton</h2>
+        <p className="text-lg mb-4 indent-8 md:text-xl font-medium pb-4">
+          Les ornementations de la collection Styx sont le fruit magique de
+          l’étreinte d’un fil de laiton massif avec le valchromat noir. Le fil
+          mesure 0,3 mm de diamètre et peut suivre n’importe quel chemin qui ne
+          lui impose pas d’angles brusques et aigus.
         </p>
-        <p className="text-lg mb-4 indent-8 md:text-xl font-medium">
-          Chacun a son Arcadie qui lui parle de cet idéal de vie plus
-          harmonieuse, plus proche de la nature.
+        <Link href={leds.src} target="_blank" rel="noopener noreferrer">
+          <Image className="object-cover" src={leds} alt="leds" />
+        </Link>
+        <h2 className="text-2xl font-bold py-8">Leds</h2>
+        <p className="text-lg mb-4 indent-8 md:text-xl font-medium pb-4">
+          Sous forme de rubans ou d’ampoule hommage au modèle originel d’Edison,
+          les sources lumineuses de mes luminaires sont des leds et bénéficient
+          ainsi de leurs grandes qualités que sont la durabilité,
+          l’instantanéité de la lumière et la consommation très réduite en
+          énergie.
         </p>
-        <p className="text-lg mb-4 indent-8 md:text-xl font-medium">
-          Il revient à l’artisan d’apprivoiser cette nature et de lui rendre
-          hommage dans ses créations. Comme le poète manie les mots, l’artisan
-          invoque la matière et la façonne pour jeter un pont entre nous et
-          cette beauté lointaine qu’est l’Arcadie.
+        <Link href={altuglas.src} target="_blank" rel="noopener noreferrer">
+          <Image className="object-cover" src={altuglas} alt="altuglas" />
+        </Link>
+        <h2 className="text-2xl font-bold py-8 ">Altuglas</h2>
+        <p className="text-lg mb-4 indent-8 md:text-xl font-medium pb-4">
+          l’altuglas ou verre acrylique est d’une clareté remarquablement proche
+          du verre, sans en avoir le poids ou la friabilité. Il se marie à
+          merveille à la luminosité des leds et peut être gravé au laser pour
+          dessiner, d’un trait de lumière, le motif de votre choix
         </p>
-        <div className="flex justify-center">
-          <Link
-            href="/contact"
-            className="bg-white text-black md:text-xl rounded-full px-6 py-2 mt-8 inline-block">
-            <p className="font-bold text-xl">Me contacter</p>
-          </Link>
-        </div>
       </div>
     </div>
   );

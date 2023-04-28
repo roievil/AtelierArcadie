@@ -4,7 +4,6 @@ import Head from 'next/head';
 
 import Hero from '@/components/Hero';
 import Slider from '@/components/Slider';
-import { SliderData } from '@/components/SliderData';
 
 export default function Home(): JSX.Element {
   return (
@@ -16,7 +15,7 @@ export default function Home(): JSX.Element {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero heading="Atelier Arcadie" message="" />
-      <Slider slides={SliderData} />
+      <Slider />
     </>
   );
 }

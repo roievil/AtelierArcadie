@@ -1,0 +1,77 @@
+{
+    "pageTitle": "Fabrication et matériaux",
+    "posts": [
+        {
+            "postTitle": "Made in Nantes",
+            "sentences": [
+                "Tous les items de la collection Styx sont dessinés et réalisés en circuit court, dans mon atelier de Nantes.",
+                "La fabrication est artisanale dans ce qu’elle a de plus noble, chaque pièce passe entre mes mains et est estampillée, ce qui me permet de garantir la grande qualité de l’objet fini et me donne une large flexibilité pour l’adapter à votre souhait.",
+                "Tous mes modèles sont donc disponibles 100% sur mesure et personnalisables."
+            ]
+        },
+        {
+            "postTitle": "Valchromat",
+            "picture": [
+                {
+                    "picturePath": "/images/materiaux/ValchromatCollectionStyxParArcadie.JPG",
+                    "pictureLegend": "",
+                    "alt": "photo de valchromat",
+                    "width": 1620,
+                    "height": 1080
+                }
+            ],
+            "sentences": [
+                "Le valchromat est un nouveau matériau constitué de fibres de bois teintées dans la masse, la couleur est présente dans toute l’épaisseur de la ‘feuille’. ",
+                "Le valchromat s’apparente donc au bois et en a la légèreté, la chaleur et la résistance, il a par contre l’avantage d’être moins sensible aux variations de température et d’hygrométrie ainsi que d’être légèrement hydrofuge. ",
+                "Je lui applique une finition qui avive sa couleur et son caractère organique et le protège des aléas du quotidien de la maison."
+            ]
+        },
+        {
+            "postTitle": "Laiton",
+            "picture": [
+                {
+                    "picturePath": "/images/materiaux/BobineDeFilDeLaitonCollectionStyxParArcadie.JPG",
+                    "pictureLegend": "",
+                    "alt": "photo d'une bobine de laiton",
+                    "width": 1620,
+                    "height": 1080
+                }
+            ],
+            "sentences": [
+                "Les ornementations de la collection Styx sont le fruit magique de l’étreinte d’un fil de laiton massif avec le valchromat noir. ",
+                "Le fil mesure 0,3 mm de diamètre et peut suivre n’importe quel chemin qui ne lui impose pas d’angles brusques et aigus."
+            ]
+        },
+        {
+            "postTitle": "Leds",
+            "picture": [
+                {
+                    "picturePath": "/images/materiaux/00ErebeCollectionStyxParArcadie.JPG",
+                    "pictureLegend": "",
+                    "alt": "photo d'une ampoule a leds",
+                    "width": 1620,
+                    "height": 1080
+                }
+            ],
+            "sentences": [
+                "Sous forme de rubans ou d’ampoule hommage au modèle originel d’Edison, les sources lumineuses de mes luminaires sont des leds et bénéficient ainsi de leurs grandes qualités que sont la durabilité, l’instantanéité de la lumière et la consommation très réduite en énergie."
+            ]
+        },
+        {
+            "postTitle": "Altuglas",
+            "picture": [
+                {
+                    "picturePath": "/images/materiaux/60LetheCollectionStyxParArcadie.jpg",
+                    "pictureLegend": "",
+                    "alt": "photo d'une lampe avec plaque d'Altuglas",
+                    "width": 1620,
+                    "height": 1080
+                }
+            ],
+            "sentences": [
+                "l’altuglas ou verre acrylique est d’une clareté remarquablement proche du verre, sans en avoir le poids ou la friabilité. ",
+                "Il se marie à merveille à la luminosité des leds et peut être gravé au laser pour dessiner, d’un trait de lumière, le motif de votre choix?"
+            ]
+        }
+    ]
+}

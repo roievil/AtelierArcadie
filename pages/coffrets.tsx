@@ -1,24 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import data from '@/components/coffrets.json';
-
-interface IPicture {
-  picturePath: string;
-  pictureLegend: string;
-  alt: string;
-  width: number;
-  height: number;
-}
-
-interface IPost {
-  postTitle: string;
-  pictures: IPicture[];
-}
-
-interface Data {
-  pageTitle: string;
-  posts: IPost[];
-}
+import { type Data } from '@/types/interfaces';
 
 const coffrets = (): JSX.Element => {
   const { pageTitle, posts } = data as Data;
@@ -37,7 +21,7 @@ const coffrets = (): JSX.Element => {
                 {post.pictures.map((picture, subIndex) => (
                   <div key={subIndex} className="mb-6">
                     <div className="max-w-full">
-                      <a
+                      <Link
                         href={picture.picturePath}
                         target="_blank"
                         rel="noopener noreferrer">
@@ -46,13 +30,15 @@ const coffrets = (): JSX.Element => {
                           alt={picture.alt}
                           width={pictureWidth}
                           height={picture.height}
-                          className="rounded-lg"
+                          className="rounded-lg pb-2"
                         />
-                      </a>
+                      </Link>
                     </div>
-                    <p className="text-sm font-medium mt-2">
-                      {picture.pictureLegend}
-                    </p>
+                    <div
+                      className="picture-legend"
+                      dangerouslySetInnerHTML={{
+                        __html: picture.pictureLegend,
+                      }}></div>
                   </div>
                 ))}
               </div>
