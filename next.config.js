@@ -1,12 +1,12 @@
+// @ts-check
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-}
+  basePath: '/gh-pages-test',
+  experimental: {
+    appDir: true,
+  },
+};
 
-module.exports = {
-  images: {
-    domains: [
-      'images.unsplash.com',
-    ]
-  }
-}
+module.exports = nextConfig;

@@ -16,8 +16,19 @@
     "incremental": true,
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+        "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "globals.env", "components/ImageModal.tsx.old", "pages/coffrets.tsx.old"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "next.config.js",
+    ".next/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }
