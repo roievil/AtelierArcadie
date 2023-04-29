@@ -3,7 +3,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  basePath: '/gh-pages-test',
+  basePath: '/AtelierArcadie',
   experimental: {
     appDir: true,
   },
