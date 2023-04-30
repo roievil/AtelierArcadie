@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import SliderData from '@/components/SliderData.json';
-import { SlArrowLeft, SlArrowRight } from 'react-icons/Sl';
+import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 import Link from 'next/link';
 
 import { type Slide } from '@/types/interfaces';
@@ -37,12 +37,12 @@ const Slider = (): JSX.Element => {
               key={index}
               className={`absolute top-0 left-0 h-full w-full transition-transform duration-1000 ${slideClass}`}
               style={{ transform: `translateX(${slidePosition}%)` }}>
-              <SlArrowLeft
+              <FiArrowLeft
                 onClick={prevSlide}
                 className="absolute top-1/2 left-[30px] transform -translate-y-1/2 text-white"
                 size={60}
               />
-              <SlArrowRight
+              <FiArrowRight
                 onClick={nextSlide}
                 className="absolute top-1/2 right-[30px] transform -translate-y-1/2 text-white"
                 size={60}
