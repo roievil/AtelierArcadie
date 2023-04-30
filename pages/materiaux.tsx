@@ -1,10 +1,10 @@
 import React from 'react';
 // import Contact from '@/components/ContactComponent'
 // import Hero from '@/components/Hero'
-import valchromat from '../public/images/materiaux/ValchromatCollectionStyxParArcadie.jpg';
-import laiton from '../public/images/materiaux/BobineDeFilDeLaitonCollectionStyxParArcadie.jpg';
-import altuglas from '../public/images/materiaux/60LetheCollectionStyxParArcadie.jpg';
-import leds from '../public/images/materiaux/00ErebeCollectionStyxParArcadie.jpg';
+import valchromat from '@/public/images/materiaux/ValchromatCollectionStyxParArcadie.jpg';
+import laiton from '@/public/images/materiaux/BobineDeFilDeLaitonCollectionStyxParArcadie.jpg';
+import altuglas from '@/public/images/materiaux/60LetheCollectionStyxParArcadie.jpg';
+import leds from '@/public/images/materiaux/00ErebeCollectionStyxParArcadie.jpg';
 import Link from 'next/link';
 import Image from 'next/image';
 
